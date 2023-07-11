@@ -1,0 +1,131 @@
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/R.jpg);
+    font-family: 'Rubik', sans-serif;
+  }
+
+img{
+  width: 290px;
+  height: 500px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: #a9adb1;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 200px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+
+  .item2, .item2, .item3, .item4, .item5, .item6{
+    font-size: 10px;
+    width: 300px; /* Increased width */
+    text-align: center;
+  }
+
+
+h1{
+  font-size: 25px;
+}
+
+#numinput {
+  padding-top: 11px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  border: 1px solid #917e7e;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 250px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#numinput:hover {
+  border: 1px solid #131212;
+}
+
+#unitdropdown {
+padding-top: 11px;
+padding-bottom: 7px;
+border: 1px solid #ccc;
+background-color: #726767;
+border-radius: 15px;
+font-size: 16px;
+width: 250px;
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+#unitdropdown:hover {
+  border: 1px solid #131212;
+  /* transform: scale(1.1); */
+}
+
+p {
+  font-size: medium;
+  font-weight: 500;
+  position: fixed;
+}
+
+button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #7e6666;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  border: 1px solid #131212;
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    width: 300px;
+    height: 500px;
+  }
+  
+  .item1 {
+    margin-top: -109px;
+    visibility: hidden;
+  }
+  .item2, .item2, .item3, .item4, .item5, .item6{
+    font-size: 10px;
+    width: 200px; /* Increased width */
+    text-align: center;
+    margin-left: -250px;
+  }
+  #numinput {
+    margin-left: -35px;
+  }
+  
+  
+  #unitdropdown {
+    margin-left: -25px;
+  }
+}
